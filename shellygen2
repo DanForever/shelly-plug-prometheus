@@ -49,3 +49,15 @@ is_valid <?php print !isset($results->errors) && empty($results->errors); ?>
 # HELP total Total energy consumed by the attached electrical appliance in Watt-minute
 # TYPE total gauge
 total <?php print $results->aenergy->total; ?>
+
+# HELP voltage Voltage of the AC power
+# TYPE voltage gauge
+voltage <?php print $results->voltage; ?>
+
+# HELP current Current in amperes
+# TYPE current gauge
+current <?php print $results->current; ?>
+
+# HELP temperature Temperature of the shelly in celcius
+# TYPE temperature gauge
+temperature <?php print $results->temperature->tC; ?>
