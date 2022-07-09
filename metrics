@@ -34,3 +34,5 @@ switch ($generation) {
 }
 
 ?>
+
+# Data polled from <?php print $hostname; ?> / gen <?php print $generation; ?> / switch <?php print $switch_id; ?>
